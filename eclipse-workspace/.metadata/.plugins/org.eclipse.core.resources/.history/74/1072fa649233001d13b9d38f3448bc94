@@ -1,0 +1,29 @@
+package entrada_processamneto_saida;
+
+import java.util.Scanner;  
+
+public class Ex04 {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+
+		int a, b, c, d, media; 
+		
+		System.out.printf("valor 1");
+		a = ler.nextInt();
+		
+		System.out.printf("valor 2");
+		b = ler.nextInt();
+		
+		System.out.printf("valor 3");
+		c = ler.nextInt();
+		
+		System.out.printf("valor 4");
+		d = ler.nextInt();
+		
+		System.out.printf("a media é %d", media);
+		
+		
+	}
+
+}

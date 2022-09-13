@@ -1,0 +1,38 @@
+package entrada_processamneto_saida;
+
+import java.util.Scanner;
+
+public class EX07 {
+
+	public static void main(String[] args) {
+	 Scanner ler = new Scanner(System.in);
+
+	 double a, b, c, d, e, f, r;
+	 
+	 System.out.printf("digite o valor do produto");
+		a = ler.nextDouble();
+		
+		System.out.printf("digite o valor do produto");
+		b = ler.nextDouble();
+		
+		System.out.printf("digite o valor do produto");
+		c = ler.nextDouble();
+		
+		System.out.printf("digite o valor do produto");
+		d = ler.nextDouble();
+		
+		System.out.printf("digite o valor do produto");
+		e = ler.nextDouble();
+		
+		System.out.printf("digite o valor do produto");
+		f = ler.nextDouble();
+		
+		r = (a + b + c + d + e)- f;
+	 
+		System.out.printf("o resultado é %.2'f", r);
+		
+	 
+	 
+	}
+
+}
