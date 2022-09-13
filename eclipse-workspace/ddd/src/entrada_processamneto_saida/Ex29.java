@@ -7,19 +7,25 @@ import java.util.Collections;
 public class Ex29 {
 
 	public static void main(String[] args) {
-		Scanner ler = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 
 		int firstNumber, secondNumber, thirdNumber;
+
 		System.out.print("Digite o primeiro número: ");
-		firstNumber = ler.nextInt();
+		firstNumber = scanner.nextInt();
+
 		System.out.print("Digite o segundo número: ");
-		secondNumber = ler.nextInt();
+		secondNumber = scanner.nextInt();
+
 		System.out.print("Digite o terceiro número: ");
-		thirdNumber = ler.nextInt();
+		thirdNumber = scanner.nextInt();
+
 		Integer[] listNumbers = { firstNumber, secondNumber, thirdNumber };
+
 		Arrays.sort(listNumbers, Collections.reverseOrder());
 		System.out.println("\nOrdem crescente dos valores: " + Arrays.toString(listNumbers));
-		ler.close();
+
+		scanner.close();
 	}
-	
+
 }

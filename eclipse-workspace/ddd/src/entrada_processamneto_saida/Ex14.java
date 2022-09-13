@@ -3,23 +3,26 @@ package entrada_processamneto_saida;
 import java.util.Scanner;
 
 public class Ex14 {
-
 	public static void main(String[] args) {
-		Scanner ler = new Scanner (System.in);
+		Scanner scanner = new Scanner(System.in);
 		
-		int alt, peso, imc;
+		double heigth, weight, imc;
 		
-		 System.out.printf("valor da altura é");
-		 alt = ler.nextInt();
-		 
-		 System.out.printf("valor peso");
-		 peso = ler.nextInt();
+		System.out.println("Digite a sua altura em (m): ");
+		heigth = scanner.nextDouble();
 		
-	imc =(peso / (alt*alt));
-	
-		System.out.printf("seu peso é %d", imc );
-	
+		System.out.println("Digite o seu peso (em Kg): ");
+		weight = scanner.nextDouble();
+		
+		imc = weight / (heigth * heigth);
+		
+		if (imc < 20) {
+			System.out.printf("Abaixo do peso!");
+		} else if (imc < 25) {
+			System.out.println("Peso ideal!");
+		} else {
+			System.out.println("Acima do peso!");
+		}
+		scanner.close();
 	}
-	
-
-}
+}	
